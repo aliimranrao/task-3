@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <h4>Write a JavaScript program to find the area of a triangle where lengths of the
+        three of its sides are 5, 6, 7</h4>
+        <p id="result" style="font-size: 14px;"></p>
+
+</head>
+
+<body style="text-align: center;">
+    <script>
+        let side1 = 5;
+        let side2 = 6;
+        let side3 = 7
+        var sumOfAllSides = (side1 + side2 + side3) / 2;
+        var area = Math.sqrt(sumOfAllSides * ((sumOfAllSides - side1) * (sumOfAllSides - side2) * (sumOfAllSides - side3)));
+
+        document.getElementById('result').innerHTML=`Result: ${Math.round(area)}`
+    </script>
+</body>
+
+</html>
